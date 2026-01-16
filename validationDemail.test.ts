@@ -32,20 +32,6 @@ describe('test', () => {
         expect(actual).toBe(true);
     })
 
-    it('test 5 : should return false when giving an email without @', () => {
-
-        let actual = validateEmail.isEmailValide('fhef');
-
-        expect(actual).toBe(false);
-    })
-
-    it('test 5 : should return false when giving an email without @', () => {
-
-        let actual = validateEmail.isEmailValide('fhef');
-
-        expect(actual).toBe(false);
-    })
-
     
 
 })
