@@ -67,4 +67,11 @@ describe('test', () => {
         expect(actual).toBe(false);
     })
 
+    it('test 10 : should return true when giving an valide email', () => {
+
+        let actual = validateEmail.isEmailValide('amine.elmohor@student.vinci.be');
+
+        expect(actual).toBe(true);
+    })
+
 })
