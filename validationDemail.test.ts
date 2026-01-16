@@ -1,3 +1,5 @@
+const ValidationDemail = require('./validationDemail');
+
 describe('first test', () => {
 
     it('should return false if giving a', () => {
@@ -8,4 +10,5 @@ describe('first test', () => {
 
         expect(actual).toBe(false);
     })
+
 })
