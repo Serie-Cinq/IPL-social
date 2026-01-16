@@ -5,6 +5,10 @@ module.exports = class ValidationDemail {
         if(!email.includes('@')){
             return false;
         }
+
+        if(!email.includes('.')){
+            return false;
+        }
         
         return true;
     }
