@@ -13,6 +13,10 @@ module.exports = class ValidationDemail {
         if(email.endsWith('.')){
             return false;
         }
+
+        if(email.includes(' ')){
+            return false;
+        }
         
         return true;
     }
