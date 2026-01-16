@@ -17,6 +17,18 @@ module.exports = class ValidationDemail {
         if(email.includes(' ')){
             return false;
         }
+
+        const parts = email.split('@');
+
+        if (parts.length !== 2) {
+            return false;
+        }
+
+        const [before, after] = parts;
+
+        if (before.length === 0 || after.length === 0) {
+            return false;
+        }
         
         return true;
     }
