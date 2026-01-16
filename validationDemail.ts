@@ -2,7 +2,7 @@ module.exports = class ValidationDemail {
 
     isEmailValide(email: string): boolean {
 
-        if(email === 'amine@'){
+        if(email.includes('@')){
             return true;
         }
         
