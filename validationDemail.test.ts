@@ -2,7 +2,7 @@ const ValidationDemail = require('./validationDemail');
 
 describe('test', () => {
 
-    it('should return false if giving a', () => {
+    it('should return false when giving a', () => {
 
         let validateEmail = new ValidationDemail();
 
@@ -11,13 +11,22 @@ describe('test', () => {
         expect(actual).toBe(false);
     })
 
-    it('should return false if giving amine', () => {
+    it('should return false when giving amine', () => {
 
         let validateEmail = new ValidationDemail();
 
         let actual = validateEmail.isEmailValide('amine');
 
         expect(actual).toBe(false);
+    })
+
+    it('should return true when giving amine@', () => {
+
+        let validateEmail = new ValidationDemail();
+
+        let actual = validateEmail.isEmailValide('amine@');
+
+        expect(actual).toBe(true);
     })
 
 })

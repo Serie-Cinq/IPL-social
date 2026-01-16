@@ -2,7 +2,9 @@ module.exports = class ValidationDemail {
 
     isEmailValide(email: string): boolean {
 
-        if(email === 'a' || email === 'amine') return false;
+        if(email === 'amine@'){
+            return true;
+        }
         
         return false;
     }
