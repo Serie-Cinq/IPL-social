@@ -60,4 +60,11 @@ describe('test', () => {
         expect(actual).toBe(false);
     })
 
+    it('test 9 : should return false when giving an email without texte after @', () => {
+
+        let actual = validateEmail.isEmailValide('afzu.fe@');
+
+        expect(actual).toBe(false);
+    })
+
 })
